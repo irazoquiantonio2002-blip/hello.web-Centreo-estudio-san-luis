@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Centro de Estudios San Luis">
+  <defs>
+    <style>
+      .logo-s { font-family: 'Baloo 2', 'Arial Rounded MT Bold', Arial, sans-serif; font-weight: 800; }
+    </style>
+    <linearGradient id="sGrad" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#0B3B78"/>
+      <stop offset="50%" stop-color="#1E63C4"/>
+      <stop offset="100%" stop-color="#4F9BFF"/>
+    </linearGradient>
+    <linearGradient id="bookBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E63C4"/>
+      <stop offset="100%" stop-color="#4F9BFF"/>
+    </linearGradient>
+    <linearGradient id="bookRedGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D3222A"/>
+      <stop offset="100%" stop-color="#A81820"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Stylized S -->
+  <text x="120" y="222" text-anchor="middle" class="logo-s" font-size="235" fill="url(#sGrad)">S</text>
+
+  <!-- Open book perched above the S: flat trapezoid pages read cleanly even at favicon size -->
+  <g>
+    <path d="M120,29 L36,17 Q29,17 29,24 L29,56 Q29,63 36,62 L120,72 Z"
+          fill="url(#bookBlueGrad)"/>
+    <path d="M120,29 L204,17 Q211,17 211,24 L211,56 Q211,63 204,62 L120,72 Z"
+          fill="url(#bookRedGrad)"/>
+    <rect x="116" y="26" width="8" height="49" rx="3" fill="#0B2545"/>
+  </g>
+</svg>

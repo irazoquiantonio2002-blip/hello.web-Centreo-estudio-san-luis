@@ -1172,10 +1172,10 @@ footer {
 }
 
 .footer-logo {
-  display: flex; align-items: center; gap: 10px; opacity: 0.55;
+  display: flex; align-items: center; gap: 10px; opacity: 0.75;
 }
-.footer-logo i { color: var(--gold); font-size: 18px; }
-.footer-logo span { font-size: 15px; font-weight: 800; }
+.footer-logo img { width: 26px; height: 26px; }
+.footer-logo span { font-size: 15px; font-weight: 800; font-family: var(--font-display); }
 
 .footer-copy { font-size: 13px; color: var(--gray-dim); }
 
