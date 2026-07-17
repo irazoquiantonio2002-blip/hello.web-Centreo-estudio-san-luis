@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Estudios San Luis | Regularización, Cursos e Ingreso a UNAM e IPN · CDMX</title>
+  <meta name="description" content="Centro de Estudios San Luis: más de 12 años formando estudiantes en Cuautepec, Gustavo A. Madero. Regularización académica, cursos de verano e invierno, inglés y preparación de ingreso a la UNAM y al IPN para niños y adolescentes de 4 a 17 años.">
+  <meta name="keywords" content="centro de estudios, regularización académica, curso de verano, curso de invierno, preparación UNAM, preparación IPN, inglés para niños, clases particulares, Cuautepec, Gustavo A. Madero, CDMX">
+  <meta property="og:title" content="Centro de Estudios San Luis | Aprender con confianza, crecer con pasión">
+  <meta property="og:description" content="Regularización académica, cursos de verano e invierno, inglés y preparación de ingreso a la UNAM y al IPN. Más de 12 años de experiencia en Cuautepec, CDMX.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="img/logo-san-luis.jpg">
+  <link rel="apple-touch-icon" href="img/logo-san-luis.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <i class="fa-solid fa-graduation-cap"></i>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Centro de Estudios San Luis — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <img src="img/logo-san-luis.jpg" alt="Logotipo Centro de Estudios San Luis">
+          </div>
+          <div class="nav-logo-copy">
+            <span>Centro Estudios</span>
+            <span>San Luis</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Nosotros</a></li>
+            <li><a href="#programas">Programas</a></li>
+            <li><a href="#metodo">Método</a></li>
+            <li><a href="#preparatoria">UNAM / IPN</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Inscribe a tu Hijo
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Nosotros</a>
+      <a href="#programas">Programas</a>
+      <a href="#metodo">Método</a>
+      <a href="#preparatoria">UNAM / IPN</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Inscribe a tu Hijo →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Centro de Estudios · Cuautepec, CDMX · Desde hace 12+ años
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Aprender con confianza,</span></span>
+            <span class="line"><span>crecer con</span></span>
+            <span class="line"><span class="accent">pasión.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            En Centro de Estudios San Luis combinamos <strong>más de 12 años de experiencia académica</strong> con acompañamiento psicológico para que niños y adolescentes de 4 a 17 años refuercen sus conocimientos, recuperen la confianza en sí mismos y alcancen sus metas — incluido el ingreso a la UNAM y al IPN.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Inscribe a tu Hijo Hoy
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#programas" class="btn-outline">
+              <i class="fa-solid fa-graduation-cap" style="font-size:15px; color:var(--gold-light);"></i>
+              Conoce Nuestros Cursos
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-award"></i>
+              12+ Años de Experiencia
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-user-graduate"></i>
+              Cientos de Alumnos Egresados
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              Cuautepec, Gustavo A. Madero
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Por qué elegirnos
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Nuestra diferencia</div>
+            <h2 class="why-quote" id="why-heading">
+              La diferencia no siempre está en el temario…
+              <em> muchas veces está en cómo acompañamos a cada alumno.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Más de 12 años formando estudiantes con dedicación, paciencia y compromiso. Unimos pedagogía y psicología para que cada niño y adolescente aprenda a su propio ritmo, en un ambiente seguro, cercano y motivador.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3>Acompañamiento Psicológico</h3>
+            <p>Nuestra fundadora es psicóloga: creemos que aprender va de la mano del bienestar emocional de cada alumno.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <h3>Atención Personalizada</h3>
+            <p>Identificamos las brechas específicas de cada estudiante y trabajamos con métodos individuales, no clases genéricas.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-sliders"></i>
+            </div>
+            <h3>Programas para Cada Etapa</h3>
+            <p>De la regularización y los cursos de verano hasta la preparación para la UNAM y el IPN: atendemos de los 4 a los 17 años.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Resultados Comprobados</h3>
+            <p>Cientos de alumnos egresados y más de una década de experiencia respaldan cada uno de nuestros cursos.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROGRAMAS
+    ══════════════════════════════════════════════════ -->
+    <section id="programas" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestros Programas</div>
+            <h2 class="section-title" id="amb-heading">
+              Un curso pensado<br>
+              <span class="gold">para cada etapa</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Desde el refuerzo escolar diario hasta la preparación para el examen de ingreso a nivel superior.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Cuál necesita tu hijo?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Regularización -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?q=80&w=1400&auto=format&fit=crop"
+              alt="Maestra dando clase de regularización personalizada a una niña">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(30,99,196,0.18); border-color:rgba(79,155,255,0.45);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-book" style="color:#8fc0ff;"></i>
+              </div>
+              <h3>Regularización Académica</h3>
+              <p>Clases personalizadas en todas las materias para ponerte al corriente y recuperar la confianza en ti mismo.</p>
+              <div class="amb-temp">Todo el Año — Atención Individual</div>
+            </div>
+          </div>
+
+          <!-- Curso de Verano / Invierno -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1602576666092-bf6447a729fc?q=80&w=1400&auto=format&fit=crop"
+              alt="Niño haciendo manualidades y pintando en el curso de verano">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,154,31,0.22); border-color:rgba(255,190,80,0.55);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-sun" style="color:#ffc266;"></i>
+              </div>
+              <h3>Cursos de Verano e Invierno</h3>
+              <p>Lectoescritura, matemáticas, inglés básico, taller de emociones y manualidades. ¡Aprenden jugando!</p>
+              <div class="amb-temp">Turno Matutino y Vespertino</div>
+            </div>
+          </div>
+
+          <!-- Preparación UNAM / IPN -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1400&auto=format&fit=crop"
+              alt="Estudiantes de nivel medio superior preparándose para su examen de ingreso">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(211,34,42,0.18); border-color:rgba(211,34,42,0.45);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-graduation-cap" style="color:#ff9a9e;"></i>
+              </div>
+              <h3>Preparación UNAM e IPN</h3>
+              <p>Exámenes de valoración y simulacros constantes para asegurar tu lugar en la escuela de tu elección.</p>
+              <div class="amb-temp">Nivel Medio Superior</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MÉTODO — How we work
+    ══════════════════════════════════════════════════ -->
+    <section id="metodo" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Un método simple y <span class="gold">cercano</span>
+          </h2>
+          <p>Acompañamos a cada estudiante desde el primer diagnóstico hasta alcanzar sus metas académicas.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Evaluación Diagnóstica</h3>
+            <p>Aplicamos un examen de valoración de conocimientos para identificar exactamente en qué necesita apoyo tu hijo. Sin costo, sin compromiso.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Plan Personalizado</h3>
+            <p>Diseñamos un plan de estudio a la medida, con métodos individuales enfocados en el problema particular de cada alumno.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Seguimiento y Resultados</h3>
+            <p>Exámenes de simulación constantes y seguimiento cercano hasta que tu hijo recupere la confianza y alcance sus objetivos.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PREPARACIÓN UNAM / IPN — Programa destacado
+    ══════════════════════════════════════════════════ -->
+    <section id="preparatoria" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Programa Destacado</div>
+            <h2 class="section-title" id="prod-heading">
+              Asegura tu lugar en<br>
+              <span class="gold">la escuela que quieres</span>
+            </h2>
+            <p class="producto-lead">
+              Curso especializado de nivel medio superior enfocado en el examen de ingreso a la UNAM y al Politécnico (IPN). Más de 11 años de respaldo y cientos de alumnos que hoy estudian en la escuela de su primera opción.
+            </p>
+
+            <ul class="feature-rows" aria-label="Beneficios del curso de preparación UNAM / IPN">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></div>
+                <div>
+                  <h4>Exámenes de Simulación Constantes</h4>
+                  <p>Practica bajo las mismas condiciones del examen real para llegar con seguridad el día del examen.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <div>
+                  <h4>Examen de Valoración Inicial</h4>
+                  <p>Identificamos tus fortalezas y áreas de oportunidad desde el primer día de clases.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <div>
+                  <h4>Los Mejores Profesores</h4>
+                  <p>Docentes especializados en las áreas de conocimiento que evalúan la UNAM y el IPN.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></div>
+                <div>
+                  <h4>11+ Años Preparando Alumnos</h4>
+                  <p>Cientos de alumnos egresados avalan nuestros resultados de ingreso en UNAM y Politécnico.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Cifras del programa de preparación">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">11+</span>
+                <span class="spec-name">Años de Experiencia</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">UNAM</span>
+                <span class="spec-name">Y Politécnico</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">100%</span>
+                <span class="spec-name">Simulacros de Examen</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">4-17</span>
+                <span class="spec-name">Años Atendidos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <img class="led-panel-body"
+                   src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop"
+                   alt="Libros, cuadernos y material de estudio del curso de preparación Centro de Estudios San Luis">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Curso de Ingreso — Nivel Medio Superior
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-circle-check" style="color:var(--gold-light);"></i>
+                Cientos de Alumnos Acreditados
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Estadísticas clave">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="12" data-suffix="+"
+                 aria-label="Más de 12 años">0</div>
+            <div class="stat-lbl">Años Formando<br>Estudiantes</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="500" data-suffix="+"
+                 aria-label="Más de 500 alumnos">0</div>
+            <div class="stat-lbl">Alumnos<br>Egresados</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="98" data-suffix="%"
+                 aria-label="98%">0</div>
+            <div class="stat-lbl">Padres que nos<br>Recomiendan</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="2" data-suffix=""
+                 aria-label="2 turnos">0</div>
+            <div class="stat-lbl">Turnos: Matutino<br>y Vespertino</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MATERIAS Y HABILIDADES
+    ══════════════════════════════════════════════════ -->
+    <section id="materias" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Materias y Habilidades</div>
+          <h2 class="section-title" id="sec-heading">
+            Reforzamos lo que <span class="gold">tu hijo necesita</span>
+          </h2>
+          <p>Un programa integral para fortalecer cada área del aprendizaje.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-book-open sector-icon" aria-hidden="true"></i>
+            <h3>Lectoescritura</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-calculator sector-icon" aria-hidden="true"></i>
+            <h3>Matemáticas</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-spell-check sector-icon" aria-hidden="true"></i>
+            <h3>Ortografía y Lenguaje</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-language sector-icon" aria-hidden="true"></i>
+            <h3>Inglés</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-face-smile sector-icon" aria-hidden="true"></i>
+            <h3>Taller de Emociones</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Agenda el futuro <span class="gold">académico</span> de tu hijo
+          </h2>
+          <p>Cupo limitado. Escríbenos y te damos informes de inscripción en minutos.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Inscripciones Abiertas</h3>
+            <p class="ci-sub">Más de 12 años acompañando a estudiantes de Cuautepec y Gustavo A. Madero.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Ubicación</h4>
+                  <p>Cerrada de Lázaro Cárdenas No. 1,<br>
+                     Col. Cuautepec de Madero,<br>
+                     Alcaldía Gustavo A. Madero, CDMX<br>
+                     (a un costado de Bodega Aurrera)</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <a href="tel:+525516394271">55 1639 4271</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y resolvemos tus dudas al instante.</p>
+                  <a href="https://wa.me/525516394271" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicita Informes</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre del padre, madre o tutor" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Regularización académica</option>
+                    <option>Curso de Verano 2026</option>
+                    <option>Curso de Invierno</option>
+                    <option>Inglés para niños</option>
+                    <option>Preparación UNAM / IPN</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Cuéntanos sobre tu hijo(a)</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Edad, grado escolar o cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Solicitar Informes por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Centro de Estudios San Luis</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Centro de Estudios San Luis. Todos los derechos reservados. Cuautepec, Gustavo A. Madero, CDMX.
+        </p>
+        <div class="footer-socials">
+          <a href="#"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/525516394271" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/525516394271?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20cursos."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
