@@ -26,6 +26,24 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured data (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Centro de Estudios San Luis",
+    "description": "Centro de estudios con más de 12 años de experiencia en Cuautepec, Gustavo A. Madero, CDMX. Regularización académica, apoyo en tareas, atención psicológica y preparación de ingreso a la UNAM y al IPN.",
+    "telephone": "+525516394271",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Cerrada de Lázaro Cárdenas No. 1, Col. Cuautepec de Madero",
+      "addressLocality": "Gustavo A. Madero",
+      "addressRegion": "CDMX",
+      "addressCountry": "MX"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -59,10 +77,12 @@
 
         <nav aria-label="Navegación principal">
           <ul class="nav-links">
-            <li><a href="#why">Nosotros</a></li>
+            <li><a href="#quienes-somos">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
             <li><a href="#programas">Programas</a></li>
             <li><a href="#metodo">Método</a></li>
             <li><a href="#preparatoria">UNAM / IPN</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
@@ -80,10 +100,12 @@
 
     <!-- Mobile menu -->
     <div id="mob-menu" aria-label="Menú móvil">
-      <a href="#why">Nosotros</a>
+      <a href="#quienes-somos">Nosotros</a>
+      <a href="#servicios">Servicios</a>
       <a href="#programas">Programas</a>
       <a href="#metodo">Método</a>
       <a href="#preparatoria">UNAM / IPN</a>
+      <a href="#testimonios">Testimonios</a>
       <a href="#contacto">Contacto</a>
       <a href="#contacto">Inscribe a tu Hijo →</a>
     </div>
@@ -186,6 +208,96 @@
     <div class="marquee" aria-hidden="true">
       <div class="marquee-inner" id="marquee"></div>
     </div>
+
+    <!-- ══════════════════════════════════════════════════
+         QUIÉNES SOMOS
+    ══════════════════════════════════════════════════ -->
+    <section id="quienes-somos" aria-labelledby="quienes-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Texto -->
+          <div class="reveal qs-text">
+            <div class="label">Quiénes Somos</div>
+            <h2 class="section-title" id="quienes-heading">
+              Más de 12 años<br>
+              <span class="gold">acompañando a tu familia</span>
+            </h2>
+            <p>
+              Centro de Estudios San Luis nació hace más de 12 años, impulsado por una profunda pasión por la enseñanza y el deseo de brindar a cada niño la oportunidad de descubrir su potencial.
+            </p>
+            <p>
+              Ese compromiso con la educación llevó a nuestra fundadora a formarse también como psicóloga, convencida de que aprender va de la mano del bienestar emocional. Hoy unimos ambas vocaciones para ofrecer <strong style="color:var(--ink); font-weight:700;">acompañamiento académico y psicológico</strong>, con empatía, respeto y dedicación — recibiendo a cada alumno con la convicción de que, con la orientación adecuada, puede superar sus retos y alcanzar sus metas.
+            </p>
+          </div>
+
+          <!-- Checklist -->
+          <div class="reveal d2">
+            <div class="check-card">
+              <h3>¿Por qué elegirnos?</h3>
+              <ul class="check-list">
+                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> 12 años de experiencia</li>
+                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Atención personalizada</li>
+                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Grupos reducidos</li>
+                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Psicóloga profesional</li>
+                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Apoyo académico desde primaria hasta la preparación de ingreso a preparatoria y universidad</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIOS
+    ══════════════════════════════════════════════════ -->
+    <section id="servicios" aria-labelledby="servicios-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Servicios</div>
+          <h2 class="section-title" id="servicios-heading">
+            Todo lo que tu hijo necesita, <span class="gold">en un solo lugar</span>
+          </h2>
+          <p>Acompañamiento académico y psicológico diseñado para cada etapa escolar.</p>
+        </div>
+
+        <div class="features-grid" role="list">
+
+          <div class="f-card reveal" role="listitem">
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-book"></i></div>
+            <h3>Regularización</h3>
+            <p>Clases personalizadas en todas las materias para ponerte al corriente y recuperar la confianza académica.</p>
+          </div>
+
+          <div class="f-card reveal d1" role="listitem">
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-pen-to-square"></i></div>
+            <h3>Apoyo en Tareas</h3>
+            <p>Acompañamiento diario para resolver tareas y reforzar lo visto en la escuela.</p>
+          </div>
+
+          <div class="f-card reveal d2" role="listitem">
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Curso de Ingreso a Preparatoria y Universidad</h3>
+            <p>Preparación específica para el examen de ingreso a nivel medio superior y superior, incluida la UNAM y el IPN.</p>
+          </div>
+
+          <div class="f-card reveal d3" role="listitem">
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3>Atención Psicológica</h3>
+            <p>Acompañamiento emocional profesional para el bienestar de cada alumno.</p>
+          </div>
+
+          <div class="f-card reveal d4" role="listitem">
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-clipboard-check"></i></div>
+            <h3>Evaluaciones Psicopedagógicas</h3>
+            <p>Valoraciones para identificar el mejor plan de apoyo académico y emocional para tu hijo.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- ══════════════════════════════════════════════════
          WHY — Por qué elegirnos
@@ -535,6 +647,62 @@
     </section>
 
     <!-- ══════════════════════════════════════════════════
+         TESTIMONIOS
+    ══════════════════════════════════════════════════ -->
+    <section id="testimonios" aria-labelledby="testimonios-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Testimonios</div>
+          <h2 class="section-title" id="testimonios-heading">
+            Lo que dicen <span class="gold">padres y alumnos</span>
+          </h2>
+          <p>Experiencias reales de familias que confiaron en Centro de Estudios San Luis.</p>
+        </div>
+
+        <div class="testi-grid">
+
+          <div class="testi-card reveal">
+            <i class="fa-solid fa-quote-left testi-quote" aria-hidden="true"></i>
+            <p>“Desde el primer día en clases de regularización notamos una diferencia. La atención personalizada y la paciencia de los maestros fueron clave. Identificaron las brechas específicas de mi hijo y trabajaron con métodos individuales centrados en su problema particular. En poco tiempo no solo se puso al corriente, sino que empezó a disfrutar el proceso de aprendizaje. Recomiendo encarecidamente este centro a cualquier padre que busque un apoyo real y efectivo para sus hijos.”</p>
+            <div class="testi-author">Madre de familia · Regularización</div>
+          </div>
+
+          <div class="testi-card reveal d1">
+            <i class="fa-solid fa-quote-left testi-quote" aria-hidden="true"></i>
+            <p>“Mi opinión sobre el curso en Centro de Estudios San Luis es de completa satisfacción. No solo se consiguió el objetivo esperado, sino que mi hijo recibió todo el apoyo, acompañamiento y seguimiento necesarios para su desarrollo académico, siempre con un trato comprensivo y profesional. Lo recomendamos ampliamente.”</p>
+            <div class="testi-author">Madre de familia · Preparación de ingreso</div>
+          </div>
+
+          <div class="testi-card reveal d2">
+            <i class="fa-solid fa-quote-left testi-quote" aria-hidden="true"></i>
+            <p>“Mi experiencia en el curso San Luis fue excelente. Los maestros son muy buenos, te dan la atención necesaria y te explican hasta que entiendes. Es un ambiente muy sano, las instalaciones están en buen estado y los maestros se preocupan por sus alumnos — más que maestros, son amigos. Es un excelente curso.”</p>
+            <div class="testi-author">María Fernanda · Alumna</div>
+          </div>
+
+          <div class="testi-card reveal">
+            <i class="fa-solid fa-quote-left testi-quote" aria-hidden="true"></i>
+            <p>“Buenos días, miss Brenda. Le agradezco mucho su apoyo, se quedó Renata en una buenísima escuela.”</p>
+            <div class="testi-author">Madre de familia</div>
+          </div>
+
+          <div class="testi-card reveal d1">
+            <i class="fa-solid fa-quote-left testi-quote" aria-hidden="true"></i>
+            <p>“Me sentí muy bien durante el curso, me ayudaron mucho y los temas están bien explicados, al igual que los ejercicios y la forma en que te ayudan a resolverlos. El apoyo es excelente; para mí todo estuvo perfecto.”</p>
+            <div class="testi-author">Alumna · Curso de preparación</div>
+          </div>
+
+          <div class="testi-card reveal d2">
+            <i class="fa-solid fa-quote-left testi-quote" aria-hidden="true"></i>
+            <p>“Mi experiencia en el curso San Luis fue buena, aprendí cosas nuevas y pude reforzar lo que ya sabía. Al principio fue difícil, pero poco a poco entendí mejor los temas y me sentí más segura. El curso sí me ayudó lo suficiente para lograr mi objetivo de entrar a una de las prepas que quería.”</p>
+            <div class="testi-author">Alumna · Curso de preparación</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
          CONTACTO
     ══════════════════════════════════════════════════ -->
     <section id="contacto" aria-labelledby="contact-heading">
@@ -633,6 +801,15 @@
           </div>
 
         </div><!-- /.contact-box -->
+
+        <!-- Google Map -->
+        <div class="map-embed reveal">
+          <iframe
+            src="https://www.google.com/maps?q=Cerrada+de+L%C3%A1zaro+C%C3%A1rdenas+No.+1%2C+Col.+Cuautepec+de+Madero%2C+Gustavo+A.+Madero%2C+CDMX&output=embed"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de Centro de Estudios San Luis en Google Maps"></iframe>
+        </div>
       </div>
     </section>
   </main>
